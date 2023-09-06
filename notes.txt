@@ -1,0 +1,14 @@
+okay you go to my blog 
+    you will ssee some of thesstuff i know about 
+            crypto 
+                    -crypto tracker
+            economics
+                    -macro
+                        -gdp calculator
+                    -micro 
+                        - demand vs supplier calculator 
+            and stocks
+                    - intrinsic value
+
+we need to learn api calls and react native and redux
+call care credit
