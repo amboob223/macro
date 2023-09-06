@@ -1,0 +1,6 @@
+CREATE DATABASE gdp;
+CREATE TABLE country(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    gdp INTEGER
+);

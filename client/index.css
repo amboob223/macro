@@ -1,0 +1,249 @@
+.outC {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles for the overall container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Styles for the form header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styles for form paragraphs */
+p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for list items */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Styles for form groups */
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Styles for labels */
+.form-group label {
+    font-weight: bold;
+    flex: 1;
+}
+
+/* Styles for input fields */
+.form-group input {
+    flex: 2;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styles for the calculate button */
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the results container */
+.outC {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles for code block */
+code {
+    background-color: #f8f8f8;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dn {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-group label {
+    font-weight: bold;
+    flex: 1;
+}
+
+
+
+.form-group input {
+    flex: 2;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.country-input {
+    margin-top: 20px;
+}
+
+/* Styles for the overall container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#dn>div {
+    margin: 2%;
+}
+
+/* Styles for the form header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* Styles for form paragraphs */
+p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for list items */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Styles for form groups */
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Styles for labels */
+.form-group label {
+    font-weight: bold;
+    flex: 1;
+    color: #333;
+}
+
+/* Styles for input fields */
+.form-group input {
+    flex: 2;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styles for the calculate button */
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the results container */
+.outC {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles for code block */
+code {
+    background-color: #f8f8f8;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #333;
+}

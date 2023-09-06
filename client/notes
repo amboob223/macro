@@ -1,0 +1,32 @@
+I want to make a econ related app that will use every thing we know including multer and render
+lets make an app that also includes the serch mechaninsm like on the father app. 
+get and post request 
+
+then the next app will have an auth components 
+
+this app im thinking making like a utility calculator 
+
+and also a detrminaint of demand based on four factors and determinant of supply and then it determines the intrinsic price 
+
+after we do the next two apps we moving to react native and the deploy on goole store then solidity 
+
+next two apps 
+    -numerology
+    -utility calculator
+    -price determiner
+
+react native 
+    -3 projects
+    -deploy one of them in google store
+    - learn solidity and start making apps in that and java
+
+I just want to make a gdp calculator that will take in a num for the it saves the num
+we need it to earse the shit when it start 
+you put in the money total for each component and and after that we save it the purpose is to 
+
+
+okay now this gdp calculator will keep track of the gdp in diffrent countries and we want it to check for duiplicates if its ia duplicate it wont save and i want to be able to click a button to sort throuth the countries only thing going to data base is the name and gdp but from that I think we need to make it be able to keep track of the chanhe in gdp over a certain time and we can use that to see where to invest at least look at the slope chaneges in gdp 
+
+and it keep track of the month and the slope so these are columns I will add
+
+this week we need to learn auth so reall like tomorrow
