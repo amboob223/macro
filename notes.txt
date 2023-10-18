@@ -16,3 +16,5 @@ okay you go to my blog
 
 we need to learn api calls and react native and redux
 call care credit
+
+to do this we had to go to chart.js and get the cdn 
