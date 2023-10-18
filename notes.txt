@@ -1,4 +1,6 @@
 okay you go to my blog 
+
+
     you will ssee some of thesstuff i know about 
             crypto 
                     -crypto tracker
@@ -7,8 +9,10 @@ okay you go to my blog
                         -gdp calculator
                     -micro 
                         - demand vs supplier calculator 
+                        using chart.js
             and stocks
                     - intrinsic value
+                    
 
 we need to learn api calls and react native and redux
 call care credit

@@ -4,147 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDP Calculator</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"
+        integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
+
+
+
 <body>
-    <div id="dn">
+    <header>
 
-        <div>
-            <h1>GDP CALCULATOR</h1>
-            <p>Welcome to our GDP calculator! GDP (Gross Domestic Product) is the total value of a country's economic
-                activity.
-                To calculate it, enter consumption, investment, government spending, imports, and exports in the form
-                below.
-                Click 'Calculate' to see the GDP estimate. Explore an essential economic indicator with our tool!</p>
+    </header>
+    <main>
+        <canvas id="supplyDemand" width="40" height="30"></canvas>
+    </main>
+    <footer>
 
-            <p>Use our calculator to calculate the rate of change in GDP, which is useful for:</p>
-            <ul>
-                <li><strong>Economic Cycle Timing:</strong> Investors time their investments based on changes in GDP
-                    growth
-                    rates.
-                    During expansions, they look for opportunities in sectors like technology, while in downturns,
-                    defensive
-                    sectors
-                    like utilities become attractive.</li>
-                <li><strong>Sector Selection:</strong> Different sectors react differently to GDP growth. Understanding
-                    growth
-                    trends
-                    helps investors allocate assets wisely; for example, construction and real estate thrive during
-                    steady
-                    GDP
-                    growth.</li>
-                <li><strong>Currency and Foreign Investment:</strong> International investors gauge currency movement
-                    potential
-                    by
-                    monitoring a country's GDP growth, as higher growth attracts foreign investment and strengthens the
-                    currency.
-                </li>
-                <li><strong>Risk Assessment:</strong> Sudden changes in GDP signal economic instability. Investors
-                    adjust
-                    portfolios
-                    by reducing volatile assets and increasing investments in safer options like bonds.</li>
-                <li><strong>Interest Rate Expectations:</strong> Central banks adjust rates based on GDP. Bond investors
-                    watch
-                    GDP
-                    trends to anticipate rate changes; high growth may lead to rate hikes affecting bond yields and
-                    prices.
-                </li>
-                <li><strong>Long-Term Investment Planning:</strong> For long-term investors, GDP growth rates help plan
-                    portfolios.
-                    Emerging markets with consistent high GDP growth offer potential for growth-oriented investments.
-                </li>
-                <li><strong>Business Strategy:</strong> Investors and business owners use GDP changes for strategic
-                    decisions,
-                    identifying rapidly growing markets or industries for expansion.</li>
-            </ul>
-        </div>
-        <div id="st">
-            <div class="form-container">
-                <div class="country-input">
-                    <div class="form-group">
-                        <label for="country">Country:</label>
-                        <input type="text" id="country" placeholder="Enter country">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="cons">Consumption:</label>
-                    <input id="cons" type="text" placeholder="Consumption">
-                </div>
-                <div class="form-group">
-                    <label for="invest">Investment:</label>
-                    <input id="invest" type="text" placeholder="Investment">
-                </div>
-                <div class="form-group">
-                    <label for="govt">Government:</label>
-                    <input id="govt" type="text" placeholder="Government">
-                </div>
-                <div class="form-group">
-                    <label for="import">Import:</label>
-                    <input id="import" type="text" placeholder="Import">
-                </div>
-                <div class="form-group">
-                    <label for="export">Export:</label>
-                    <input id="export" type="text" placeholder="Export">
-                </div>
-                <div class="button-container">
-                    <button id="btn">Calculate</button>
-                </div>
-            </div>
-        </div><!-- / -->
-    </div>
-
-    <div class="outC">
-        <div class="inC">
-            <div>
-                <h1 id="nay"></h1>
-            </div>
-            <div>
-                <h3 id="outlaw"></h3>
-            </div>
-            <h1>The formula for gdp</h1>
-            <code>C+I+G+(n-x) = Y</code>
-            <p>The formula for calculating the percentage change</p>
-            <code>percentage change = ((new - old) / old) * 100%</code>
-        </div>
-    </div>
+    </footer>
 
     <script>
-        const country = document.getElementById("country");
-        const space = document.getElementById("nay")
+        const canvas = document.getElementById("supplyDemand").getContext("2d");
+        const supply = [5, 10, 15, 20];
+        const demand = [20, 15, 10, 5];
 
-        const cons = document.getElementById("cons");
-        const invest = document.getElementById("invest");
-        const govt = document.getElementById("govt");
-        const imp = document.getElementById("import");
-        const exp = document.getElementById("export");
-        const outline = document.getElementById("outlaw");
-
-        const btn = document.getElementById("btn")
-        btn.addEventListener("click", async (event) => {
-            try {
-                event.preventDefault()
-                const output = parseInt(cons.value) + parseInt(invest.value) + parseInt(govt.value) + (parseInt(imp.value) - parseInt(exp.value))
-                space.innerHTML = `${country.value}'s GDP is `
-                outline.innerHTML = output
-
-                const body = {
-                    country: country.value,
-                    gdp: output
+        new Chart(canvas, {
+            type: "line",
+            data: {
+                labels: ["price1", "price2", "price3", "price4"],
+                datasets: [
+                    {
+                        label: "demand",
+                        borderColor: "red",
+                        backgrounColor: "purple",
+                        data: demand,
+                        fill: "true"
+                    },
+                    {
+                        label: "supply",
+                        borderColor: "pink",
+                        backgrounColor: "brown",
+                        data: supply,
+                        fill: "true"
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    },
+                    y: {
+                        beginAtZero: true
+                    },
                 }
-
-                const data = await fetch("http://localhost:5000/gdp", {
-                    method: "POST",
-                    headers: { "Content-type": "application/json" },
-                    body: JSON.stringify(body)
-                })
-
-            } catch (error) {
-                console.log(error)
             }
-        });
+
+        }
+
+        )
+
     </script>
 </body>
 
